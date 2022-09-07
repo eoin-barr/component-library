@@ -1,6 +1,6 @@
 {
   "name": "@eoin-barr/react-component-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -24,7 +24,8 @@
   },
   "keywords": [
     "React",
-    "Tailwind"
+    "JavaScript",
+    "TypeScriptScript"
   ],
   "author": "eoin-barr",
   "license": "MIT",
