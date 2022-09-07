@@ -21,15 +21,24 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import React from 'react';
-export var Button = function (props) {
-    var children = props.children, backgroundColor = props.backgroundColor, color = props.color, style = props.style, rest = __rest(props, ["children", "backgroundColor", "color", "style"]);
+export var Navbar = function (props) {
+    var children = props.children, style = props.style, rest = __rest(props, ["children", "style"]);
     var updatedStyle = style || {};
-    if (backgroundColor) {
-        updatedStyle.backgroundColor = backgroundColor;
-    }
-    if (color) {
-        updatedStyle.color = color;
-    }
-    return (React.createElement("button", __assign({ style: updatedStyle }, rest), children));
+    updatedStyle.display = 'flex';
+    updatedStyle.flexDirection = 'row';
+    updatedStyle.justifyContent = 'space-between';
+    updatedStyle.alignItems = 'center';
+    updatedStyle.padding = '0 20px';
+    updatedStyle.borderRadius = '0.5rem';
+    updatedStyle.width = '100%';
+    updatedStyle.boxShadow =
+        '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);';
+    updatedStyle.position = 'sticky';
+    updatedStyle.margin = '0 auto';
+    updatedStyle.top = '0';
+    updatedStyle.backgroundColor = 'hsla(0,0%,100%,.1)';
+    updatedStyle.backdropFilter = 'blur(12px) brightness(1) saturate(1.5)';
+    updatedStyle.maxWidth = '720px';
+    return (React.createElement("div", __assign({ style: updatedStyle }, rest), children));
 };
-//# sourceMappingURL=Button.js.map
+//# sourceMappingURL=navbar.js.map

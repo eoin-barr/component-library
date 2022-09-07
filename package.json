@@ -1,5 +1,5 @@
 {
-  "name": "@eoin-barr/react-tailwind-component-library",
+  "name": "@eoin-barr/react-component-library",
   "version": "1.0.0",
   "description": "",
   "main": "dist/cjs/index.js",

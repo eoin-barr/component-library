@@ -25,18 +25,27 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Button = void 0;
+exports.Navbar = void 0;
 var react_1 = __importDefault(require("react"));
-var Button = function (props) {
-    var children = props.children, backgroundColor = props.backgroundColor, color = props.color, style = props.style, rest = __rest(props, ["children", "backgroundColor", "color", "style"]);
+var Navbar = function (props) {
+    var children = props.children, style = props.style, rest = __rest(props, ["children", "style"]);
     var updatedStyle = style || {};
-    if (backgroundColor) {
-        updatedStyle.backgroundColor = backgroundColor;
-    }
-    if (color) {
-        updatedStyle.color = color;
-    }
-    return (react_1.default.createElement("button", __assign({ style: updatedStyle }, rest), children));
+    updatedStyle.display = 'flex';
+    updatedStyle.flexDirection = 'row';
+    updatedStyle.justifyContent = 'space-between';
+    updatedStyle.alignItems = 'center';
+    updatedStyle.padding = '0 20px';
+    updatedStyle.borderRadius = '0.5rem';
+    updatedStyle.width = '100%';
+    updatedStyle.boxShadow =
+        '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);';
+    updatedStyle.position = 'sticky';
+    updatedStyle.margin = '0 auto';
+    updatedStyle.top = '0';
+    updatedStyle.backgroundColor = 'hsla(0,0%,100%,.1)';
+    updatedStyle.backdropFilter = 'blur(12px) brightness(1) saturate(1.5)';
+    updatedStyle.maxWidth = '720px';
+    return (react_1.default.createElement("div", __assign({ style: updatedStyle }, rest), children));
 };
-exports.Button = Button;
-//# sourceMappingURL=Button.js.map
+exports.Navbar = Navbar;
+//# sourceMappingURL=navbar.js.map
